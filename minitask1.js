@@ -20,4 +20,7 @@ const Profile = {
   ...extraInfo,
 };
 
+// karna pakai spread operator jadi semua isi nya jadi object baru
+// didalam object Profile ada name, age, skills, education
+
 console.log(Profile.skills[1]);
