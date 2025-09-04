@@ -23,7 +23,7 @@ const Profile = {
 // karna pakai spread operator jadi semua isi nya jadi object baru
 // didalam object Profile ada name, age, skills, education
 
-let skills = extraInfo.skills;
+let skills = Profile.skills;
 
 let data = [...skills, "swimming", "basket"];
 
