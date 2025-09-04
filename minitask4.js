@@ -45,11 +45,13 @@ allOutput(20);
 
 // pure function
 
-const allOutput2 = (celci, cb) => {
-  const cF = cb(celci);
-  console.log(cF);
+const allOutput2 = (celci, cb, satuanFah) => {
+  const value = cb(celci, satuanFah);
+  console.log(`${value}${satuanFah}`);
 };
 
-allOutput2(20, celciToFahren);
-allOutput2(20, celciToReamur);
-allOutput2(20, celciToKelvin);
+// Isi argumen pertama dari parameter, parameter kedua
+// cb ini fungsi yang dipanggil kembali
+allOutput2(20, celciToFahren, "°F");
+allOutput2(20, celciToReamur, "°R");
+allOutput2(20, celciToKelvin, "°K");
