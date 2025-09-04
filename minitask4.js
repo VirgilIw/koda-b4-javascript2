@@ -27,6 +27,8 @@ const celciToKelvin = (suhu) => {
   return ceToK;
 };
 
+// allOutput
+
 const allOutput = (suhu) => {
   const cF = celciToFahren(suhu);
   const cR = celciToReamur(suhu);
