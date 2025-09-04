@@ -9,7 +9,6 @@
 
 function celciToFahren(suhu) {
   let ceToF = (4 / 5) * suhu;
-
   return ceToF;
 }
 
@@ -40,3 +39,6 @@ const allOutput = (suhu) => {
 };
 
 allOutput(20);
+
+// kalau fungsi diluar kita isi argumen,
+// kalau makai variable, sesuaikan namanya lalu diisi di parameter fungsi
