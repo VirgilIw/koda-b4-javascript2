@@ -6,7 +6,7 @@
 // celcius ke fahrenheit
 
 function celciToFahren(celci) {
-  let ceToF = (4 / 5) * celci;
+  let ceToF = (9 / 5) * celci + 32;
   return ceToF;
 }
 
@@ -20,7 +20,7 @@ const celciToReamur = function (celci) {
 // celcius ke kelvin
 
 const celciToKelvin = (celci) => {
-  let ceToK = (9 / 5) * celci + 32;
+  let ceToK = celci + 273;
   return ceToK;
 };
 
@@ -36,7 +36,7 @@ const allOutput = (celci) => {
   console.log(`Celcius ke Kelvin = ${cK}°K`);
 };
 
-allOutput(10);
+allOutput(20);
 
 // kalau fungsi diluar kita isi argumen,
 // kalau makai variable, sesuaikan namanya lalu diisi di parameter fungsi
