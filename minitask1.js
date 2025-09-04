@@ -25,3 +25,4 @@ const Profile = {
 
 Profile.skills[2] = "basket";
 console.log(Profile.skills[2]);
+console.log(Profile.skills);
