@@ -22,8 +22,6 @@ const Profile = {
 
 // karna pakai spread operator jadi semua isi nya jadi object baru
 // didalam object Profile ada name, age, skills, education
-
-Profile.skills[2] = "basket";
-Profile.skills[3] = "swimming";
-console.log(Profile.skills[2]);
+Profile.skills.push("swimming");
+Profile.skills.push("Basket");
 console.log(Profile.skills);
