@@ -38,5 +38,5 @@ const allOutput = (celci) => {
 
 allOutput(20);
 
-// kalau fungsi diluar kita isi argumen,
+// kalau fungsi dipanggil diluar kita isi argumen,
 // kalau makai variable, sesuaikan namanya lalu diisi di parameter fungsi
