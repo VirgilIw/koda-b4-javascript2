@@ -45,9 +45,9 @@ allOutput(20);
 
 // pure function
 
-const allOutput2 = (celci, cb, satuanFah, satuanKel) => {
-  const cF = cb(celci);
-  const cR = satuanFah(celci);
+const allOutput2 = (celci, satuanFah, satuanReam, satuanKel) => {
+  const cF = satuanFah(celci);
+  const cR = satuanReam(celci);
   const cK = satuanKel(celci);
 
   console.log(`Celcius ke Fahrenheit = ${cF}°F`);
