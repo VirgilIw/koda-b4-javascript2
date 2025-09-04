@@ -5,8 +5,6 @@
 
 // celcius ke fahrenheit
 
-// F= C x 9/5 + 32
-
 function celciToFahren(suhu) {
   let ceToF = (4 / 5) * suhu;
   return ceToF;
