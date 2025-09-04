@@ -24,5 +24,6 @@ const Profile = {
 // didalam object Profile ada name, age, skills, education
 
 Profile.skills[2] = "basket";
+Profile.skills[3] = "swimming";
 console.log(Profile.skills[2]);
 console.log(Profile.skills);
