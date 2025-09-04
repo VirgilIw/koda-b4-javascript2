@@ -26,6 +26,8 @@ const celciToKelvin = (celci) => {
 
 // allOutput
 
+// impure function, karna makai fungsi dari luar
+
 const allOutput = (celci) => {
   const cF = celciToFahren(celci);
   const cR = celciToReamur(celci);
@@ -40,3 +42,14 @@ allOutput(20);
 
 // kalau fungsi dipanggil diluar kita isi argumen,
 // kalau makai variable, sesuaikan namanya lalu diisi di parameter fungsi
+
+// pure function
+
+const allOutput2 = (celci, cb) => {
+  const cF = cb(celci);
+  console.log(cF);
+};
+
+allOutput2(20, celciToFahren);
+allOutput2(20, celciToReamur);
+allOutput2(20, celciToKelvin);
