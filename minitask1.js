@@ -15,16 +15,17 @@ const extraInfo = {
   ],
 };
 
-const Profile = {
+const profile = {
   ...bio,
   ...extraInfo,
+  ...{
+    skills: [...extraInfo.skills, "soccer"],
+  },
 };
 
 // karna pakai spread operator jadi semua isi nya jadi object baru
 // didalam object Profile ada name, age, skills, education
 
-let skills = Profile.skills;
+console.log(profile.skills);
 
-let data = [...skills, "swimming", "basket"];
-
-console.log(data);
+console.log(profile.skills[1]);
